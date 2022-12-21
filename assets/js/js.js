@@ -1,13 +1,13 @@
-const cuartos = document.querySelector("#cuartos").value;
-const metrosDesde = document.querySelector("#desde").value;
-const metrosHasta = document.querySelector("#hasta").value;
 
 const boton_buscar = () => {
-  if (cuartos && metrosDesde && metrosHasta){
-    mostrar(cuartos, metrosDesde, metrosHasta);
-   } else {
-    alert("Debes llenar todos los campos");
-   }
+    const cuartos = document.querySelector("#cuartos").value;
+    const metrosDesde = document.querySelector("#desde").value;
+    const metrosHasta = document.querySelector("#hasta").value;
+        if (cuartos && metrosDesde && metrosHasta){
+            mostrar(cuartos, metrosDesde, metrosHasta);
+        } else {
+            alert("Debes llenar todos los campos");
+        }
 }
 
 const mostrar = (Rcuartos ="*", RmetrosDesde ="*", RmetrosHasta="*") => {
